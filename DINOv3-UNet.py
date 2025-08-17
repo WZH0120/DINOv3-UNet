@@ -71,7 +71,7 @@ class DINOv3_UNet(nn.Module):
         )
         if dinov3_weight_path:
             checkpoint = torch.load(dinov3_weight_path, map_location='cpu')
-            model.load_state_dict(checkpoint, strict=True)
+            self.dino.load_state_dict(checkpoint, strict=True)
             print("✓ Local weights successfully loaded")
 
         for param in self.dino.parameters():
