@@ -1,4 +1,3 @@
-This repo is under heavy construction. The remaining code will be completed within a few days.
 
 #### How To Use
 
